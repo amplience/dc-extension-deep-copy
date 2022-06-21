@@ -1,46 +1,68 @@
-# Getting Started with Create React App
+[![Amplience Dynamic Content](media/header.png)](https://amplience.com/dynamic-content)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Dynamic Content Deep Copy Extension](media/screenshot.png)
 
-## Available Scripts
+# Dynamic Content Deep Copy Extension
 
-In the project directory, you can run:
+This extension allows users to make a deep copy of content item with its dependencies. There is also ability to rename future copies by adding a prefix or rename each item individually. User will see validation status on each dependency of selected content item. Copy button is not disabled only when each dependency is valid, otherwise need to fix invalid content first and press reload to validate it again.
 
-### `npm start`
+## Register Extension
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This extension needs to be [registered](https://amplience.com/docs/development/registeringextensions.html) against a Hub with in the Dynamic Content application (Developer -> Extensions), for it to load within that Hub.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Setup
 
-### `npm test`
+![Setup](media/setup.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Category: Dashboard
+* Label: Deep Copy _(this will appear as the tab title in the Dashboard)_
+* Name: deep-copy _(needs to be unique with the Hub)_
+* URL: [https://deep-copy.extensions.content.amplience.net](https://deep-copy.extensions.content.amplience.net)
+* Description: Deep Copy Extension _(can be left blank, if you wish)_
 
-### `npm run build`
+Note:
+You can use our deployed version of this extension (builds from the "production" branch) -
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[https://deep-copy.extensions.content.amplience.net](https://deep-copy.extensions.content.amplience.net)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+_As this is an open source project you're welcome to host your own "fork" of this project. You can use any standard static hosting service (Netlify, Amplify, Vercel, etc.) if you wish._
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Permissions
 
-### `npm run eject`
+![Permissions](media/permissions.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Installation parameters
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The only one required installation parameter is `hub` id, user can find it in Hub settings -> Properties
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```json
+{
+  "hub": "6b689b30cfd47e50614va258"
+}
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Overview
 
-## Learn More
+Selected content item with its dependencies, validated successfully.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Validation](media/validation.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Rename functionality by adding prefix to future copies.
+
+![Rename](media/rename.png)
+
+## Limitations
+
+This version of Deep Copy Dashboard doesn't support validation and copy hierarchies. It will make a full copy of slot including all the dependencies.
+
+## Build and run locally 
+
+`npm install`
+`npm run start`
+
+Runs the app in the development mode over https.\
+Use [https://localhost:3000](https://localhost:3000) to configure local version of extension.
+
+`npm run build`
+
+The built extension will then be present in the `build/` directory, and you can upload it to any webserver.
