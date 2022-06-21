@@ -496,7 +496,7 @@ export const copyItems =
         return setTimeout(() => {
           history.push('/');
           dispatch(setCopyLoader(false));
-        }, 5000);
+        }, 5000 - (endTime - startTime));
       }
 
       history.push('/');
