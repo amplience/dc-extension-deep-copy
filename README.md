@@ -47,7 +47,7 @@ Selected content item with its dependencies, validated successfully.
 
 ![Validation](media/validation.png)
 
-Rename functionality by adding prefix to future copies.
+Rename functionality by adding a prefix to future copies.
 
 ![Rename](media/rename.png)
 
