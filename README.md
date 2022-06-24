@@ -33,7 +33,7 @@ _As this is an open source project you're welcome to host your own "fork" of thi
 
 #### Installation parameters
 
-The only one required installation parameter is `hub` id, user can find it in Hub settings -> Properties
+The only required installation parameter is the `hub` id, users can find it in `Hub settings` -> `Properties` in Dynamic Content.
 
 ```json
 {
