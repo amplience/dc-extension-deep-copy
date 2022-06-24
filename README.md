@@ -53,7 +53,7 @@ Rename functionality by adding a prefix to future copies.
 
 ## Limitations
 
-This version of Deep Copy Dashboard doesn't support validation and copy hierarchies. It will make a full copy of slot including all the dependencies.
+This version of Deep Copy Dashboard doesn't support validation and copy of hierarchies. It will also make a full copy of slots including all the dependencies.
 
 ## Build and run locally 
 
