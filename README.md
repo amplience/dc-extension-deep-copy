@@ -61,7 +61,7 @@ This version of Deep Copy Dashboard doesn't support validation and copy of hiera
 `npm run start`
 
 Runs the app in the development mode over https.\
-Use [https://localhost:3000](https://localhost:3000) to configure local version of extension.
+Use [https://localhost:3000](https://localhost:3000) as the URL when configuring your local version of the extension.
 
 `npm run build`
 
