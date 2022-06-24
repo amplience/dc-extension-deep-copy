@@ -4,7 +4,7 @@
 
 # Dynamic Content Deep Copy Extension
 
-This extension allows users to make a deep copy of content item with its dependencies. There is also ability to rename future copies by adding a prefix or rename each item individually. User will see validation status on each dependency of selected content item. Copy button is not disabled only when each dependency is valid, otherwise need to fix invalid content first and press reload to validate it again.
+This extension allows users to make a deep copy of a content item with its dependencies. There is also the ability to rename future copies by adding a prefix or renaming each item individually. Users will see validation status on each dependency of the selected content item. Copying content is only possible when each dependency is valid, otherwise users need to fix invalid content first and press reload to validate it again.
 
 ## Register Extension
 
