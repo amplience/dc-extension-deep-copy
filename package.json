@@ -21,6 +21,7 @@
     "ajv-draft-04": "^1.0.0",
     "ajv-formats": "^2.1.1",
     "array-to-tree": "^3.3.2",
+    "cross-env": "^7.0.3",
     "dc-extensions-sdk": "^2.0.0",
     "lodash": "^4.17.21",
     "material-ui-popup-state": "^2.0.0",
@@ -41,8 +42,8 @@
     "lint:css": "stylelint './src/**/*.styles.ts'",
     "lint:fix": "eslint --fix './src/**/*.{js,jsx,ts,tsx}'",
     "clean": "trash lib build",
-    "start": "HTTPS=true react-app-rewired start",
-    "build": "react-app-rewired build",
+    "start": "cross-env GENERATE_SOURCEMAP=false HTTPS=true react-app-rewired start",
+    "build": "cross-env GENERATE_SOURCEMAP=false react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject"
   },
