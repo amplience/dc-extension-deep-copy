@@ -4,7 +4,7 @@
 
 # Dynamic Content Deep Copy Extension
 
-This extension allows users to make a deep copy of content item with its dependencies. There is also ability to rename future copies by adding a prefix or rename each item individually. User will see validation status on each dependency of selected content item. Copy button is not disabled only when each dependency is valid, otherwise need to fix invalid content first and press reload to validate it again.
+This extension allows users to make a deep copy of a content item with its dependencies. There is also the ability to rename future copies by adding a prefix or renaming each item individually. Users will see validation status on each dependency of the selected content item. Copying content is only possible when each dependency is valid, otherwise users need to fix invalid content first and press reload to validate it again.
 
 ## Register Extension
 
@@ -33,7 +33,7 @@ _As this is an open source project you're welcome to host your own "fork" of thi
 
 #### Installation parameters
 
-The only one required installation parameter is `hub` id, user can find it in Hub settings -> Properties
+The only required installation parameter is the `hub` id, users can find it in `Hub settings` -> `Properties` in Dynamic Content.
 
 ```json
 {
@@ -47,13 +47,13 @@ Selected content item with its dependencies, validated successfully.
 
 ![Validation](media/validation.png)
 
-Rename functionality by adding prefix to future copies.
+Rename functionality by adding a prefix to future copies.
 
 ![Rename](media/rename.png)
 
 ## Limitations
 
-This version of Deep Copy Dashboard doesn't support validation and copy hierarchies. It will make a full copy of slot including all the dependencies.
+This version of Deep Copy Dashboard doesn't support validation and copy of hierarchies. It will also make a full copy of slots including all the dependencies.
 
 ## Build and run locally 
 
@@ -61,7 +61,7 @@ This version of Deep Copy Dashboard doesn't support validation and copy hierarch
 `npm run start`
 
 Runs the app in the development mode over https.\
-Use [https://localhost:3000](https://localhost:3000) to configure local version of extension.
+Use [https://localhost:3000](https://localhost:3000) as the URL when configuring your local version of the extension.
 
 `npm run build`
 
