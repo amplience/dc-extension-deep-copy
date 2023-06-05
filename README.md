@@ -57,6 +57,8 @@ This version of Deep Copy Dashboard doesn't support validation and copy of hiera
 
 ## Build and run locally 
 
+This project requires Node 16.x or 18.x to build.
+
 `npm install`
 `npm run start`
 
