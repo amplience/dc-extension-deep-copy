@@ -1,5 +1,3 @@
-[![Amplience Dynamic Content](media/header.png)](https://amplience.com/dynamic-content)
-
 ![Dynamic Content Deep Copy Extension](media/screenshot.png)
 
 # Dynamic Content Deep Copy Extension
