@@ -65,4 +65,4 @@ Use [https://localhost:3000](https://localhost:3000) as the URL when configuring
 
 `npm run build`
 
-The built extension will then be present in the `build/` directory, and you can upload it to any webserver.
+The built extension will then be present in the `build/` directory, and you can upload it to any webserver.  
